@@ -59,3 +59,22 @@ for (let i = 0; i <= 50; i++) {
 }
 */ 
 
+function verificarNumeroPrimo(numb) {
+    if(numb <= 1) {
+        console.log("Não é primo")
+    } else {
+        let ehPrimo = true
+        for (i = 2; i < numb; i++) {
+            if(numb%i == 0) {
+                ehPrimo = false
+                break;
+            } 
+        } if (ehPrimo) {
+            console.log(`O número ${numb} é primo`)
+        } else {
+            console.log(`O número ${numb} não é primo`)
+        }
+    }
+}
+
+ verificarNumeroPrimo(17)
